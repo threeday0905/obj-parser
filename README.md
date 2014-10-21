@@ -33,10 +33,10 @@ A tool to parse object properties with dynamic replacer.
 There are some other useful APIs as below:
 
 ##### isPlainObject( value )
-Just like **jQuery.isPlainObject**
+desc: same as **jQuery.isPlainObject**
 
 ##### extendAllProps( receiver, [ supplier, supplier2, ...] )
-Just like **jQuery.extend**
+desc: same as **jQuery.extend**
 
 ##### parseString( str, replacer, callback )
 desc: parse string, replace {{xxx}} with map object or callback function
