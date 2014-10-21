@@ -39,7 +39,7 @@ Just like **jQuery.isPlainObject**
 Just like **jQuery.extend**
 
 ##### parseString( str, replacer, callback )
-Parse string, replace {{xxx}} with map object or callback function
+desc: parse string, replace {{xxx}} with map object or callback function
 
     parseString('name: {{foo}}', {
         foo: 'James'
@@ -50,7 +50,7 @@ Parse string, replace {{xxx}} with map object or callback function
     });    
     
 ##### getPropByPath( object, path )
-Get prop value from object with prop path
+desc: get prop value from object with prop path
 
     var source = {
         foo: {
@@ -61,7 +61,7 @@ Get prop value from object with prop path
     getPropByPath(source, 'foo.bar'); //return 'hello'
     
 ##### setPropByPath ( object, path, newValue )
-Set prop value from object with prop path
+desc: set prop value from object with prop path
 
     var source = {
         foo: {
@@ -72,12 +72,12 @@ Set prop value from object with prop path
     setPropByPath(source, 'foo.bar', 'world'); // update 'hello' to 'world'
     
 ##### replaceAllStrProps( obj, replaceFn, hoster )
-go throgh all props, and replace the value if it is string.
+desc: go throgh all props, and replace the value if it is string.
 
 *refer "test/replaceAllStrProp.test.js" for" detail usage.*
 
 ##### replaceAllMatchProps( obj, matchFn, replaceFn, hoster )
-go throgh all props, and replace the value if it is pase the matchFn.
+desc: go throgh all props, and replace the value if it is pase the matchFn.
 
 *refer "test/replaceAllMatchProps.test.js" for detail usage.*
 
