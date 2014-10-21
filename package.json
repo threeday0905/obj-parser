@@ -1,0 +1,37 @@
+{
+  "name": "obj-parser",
+  "version": "0.1.0",
+  "description": "A tool to parse object properties with dynamic replacer",
+  "main": "index.js",
+  "scripts": {
+    "hint": "jscs {*.js,lib,test} & jshint . --exclude-path .gitignore",
+    "mocha": "mocha 'test/**/*.test.js' --report spec --harmony",
+    "cov": "node --harmony node_modules/.bin/istanbul cover --report html ./node_modules/mocha/bin/_mocha -- 'test/**/*.test.js' --harmony --reporter list ",
+    "test": "jscs {*.js,lib,test} & jshint . --exclude-path .gitignore && node --harmony node_modules/.bin/istanbul cover --report html ./node_modules/mocha/bin/_mocha -- 'test/**/*.test.js' --harmony --reporter dot "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:threeday0905/obj-parser.git"
+  },
+  "keywords": [
+    "object",
+    "parser",
+    "replacer"
+  ],
+  "author": "Herman <threeday0905@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/threeday0905/obj-parser/issues"
+  },
+  "homepage": "https://github.com/threeday0905/obj-parser",
+  "devDependencies": {
+    "chai": "*",
+    "istanbul": "*",
+    "jscs": "*",
+    "jshint": "*",
+    "mocha": "*"
+  },
+  "dependencies": {
+    "args-expect": "~0.2.1"
+  }
+}
