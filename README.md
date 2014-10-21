@@ -13,7 +13,7 @@ A tool to parse object properties with dynamic replacer.
     var source = {
         foo: '{{name}} / age {{age}}',
         bar: 'staic text',
-        bar: [
+        baz: [
             '{{name}}', {{age}}
         ]
     };
